@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val button: Button = findViewById(R.id.saludaButton)
+        val button: Button = findViewById(R.id.saludaButton) // Llama al boton con el id saludaBoton
         button.setOnClickListener {
             val name = findViewById<TextInputEditText>(R.id.nameFieldInput).text.toString()
             Snackbar.make(button, "Hola $name", Snackbar.LENGTH_LONG).show()
